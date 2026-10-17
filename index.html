@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1120">
+  <meta name="description" content="Raihan's technical portfolio featuring networking labs, MikroTik, Cisco, Linux, and infrastructure projects.">
+
+  <title>Raihan | Network Engineering Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="navbar">
+    <a class="brand" href="#home">
+      <span class="brand-icon">R<span>.</span></span>
+      <span>RAIHAN<span class="brand-muted">.DEV</span></span>
+    </a>
+
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="nav-status" href="#projects">
+      <span class="status-dot"></span>
+      Portfolio in progress
+    </a>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-content">
+        <div class="eyebrow">
+          <span class="status-dot"></span>
+          COMPUTER ENGINEERING · NETWORKING
+        </div>
+
+        <h1>
+          Building reliable<br>
+          <span class="gradient-text">network infrastructure.</span>
+        </h1>
+
+        <p class="hero-description">
+          I'm Raihan, a Computer Engineering student focused on
+          networking, infrastructure, and Linux system administration.
+          I learn by building labs, testing configurations, and
+          documenting real technical challenges.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">
+            Explore my projects <span aria-hidden="true">↗</span>
+          </a>
+          <a class="button button-secondary"
+             href="https://github.com/YOUR-USERNAME"
+             target="_blank" rel="noopener noreferrer">
+            GitHub profile ↗
+          </a>
+        </div>
+
+        <div class="hero-meta">
+          <span><span class="meta-symbol">01</span> Networking</span>
+          <span><span class="meta-symbol">02</span> Infrastructure</span>
+          <span><span class="meta-symbol">03</span> Troubleshooting</span>
+        </div>
+      </div>
+
+      <div class="network-panel">
+        <div class="panel-header">
+          <div class="window-dots"><i></i><i></i><i></i></div>
+          <span>NETWORK_OVERVIEW</span>
+          <span class="panel-live"><span class="status-dot"></span> LAB</span>
+        </div>
+
+        <div class="topology">
+          <div class="topology-node internet-node">
+            <span class="node-icon">◎</span>
+            <span>INTERNET</span>
+            <small>WAN</small>
+          </div>
+
+          <div class="connection"><span></span></div>
+
+          <div class="topology-node router-node">
+            <span class="node-icon">⌘</span>
+            <span>ROUTER</span>
+            <small>Gateway / Firewall</small>
+          </div>
+
+          <div class="connection"><span></span></div>
+
+          <div class="topology-node switch-node">
+            <span class="node-icon">▤</span>
+            <span>MANAGED SWITCH</span>
+            <small>VLAN 10 · VLAN 20</small>
+          </div>
+
+          <div class="branch-lines">
+            <span></span><span></span><span></span>
+          </div>
+
+          <div class="client-nodes">
+            <div class="client-node">
+              <span>▣</span>
+              <b>STAFF</b>
+              <small>VLAN 10</small>
+            </div>
+            <div class="client-node">
+              <span>▣</span>
+              <b>GUEST</b>
+              <small>VLAN 20</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel-footer">
+          <span><i class="legend-blue"></i> Network topology concept</span>
+          <span>NOT LIVE DATA</span>
+        </div>
+      </div>
+
+      <div class="hero-index">01 / ENGINEERING PORTFOLIO</div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-heading">
+        <span class="section-label">01 — ABOUT</span>
+        <h2>Learning through <span class="gradient-text">hands-on work.</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <p class="about-lead">
+          My goal is to understand not only how to configure a network,
+          but also why it works, how to verify it, and how to fix it
+          when something goes wrong.
+        </p>
+
+        <div class="about-details">
+          <div class="detail-row">
+            <span>EDUCATION</span>
+            <strong>Diploma in Computer Engineering</strong>
+          </div>
+          <div class="detail-row">
+            <span>FOCUS</span>
+            <strong>Network & Systems Administration</strong>
+          </div>
+          <div class="detail-row">
+            <span>APPROACH</span>
+            <strong>Build · Test · Document · Improve</strong>
+          </div>
+          <div class="detail-row">
+            <span>STATUS</span>
+            <strong class="learning-status">Developing technical projects</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="section-heading">
+        <span class="section-label">02 — TECHNICAL STACK</span>
+        <h2>Tools I work <span class="gradient-text">with.</span></h2>
+        <p class="section-description">
+          Technologies used or currently studied in my practical labs.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card">
+          <span class="skill-number">01</span>
+          <div class="skill-icon">↔</div>
+          <h3>Networking</h3>
+          <p>IP addressing, subnetting, VLANs, routing, DHCP, DNS, and troubleshooting.</p>
+          <div class="tag-list">
+            <span>TCP/IP</span><span>VLAN</span><span>Routing</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <span class="skill-number">02</span>
+          <div class="skill-icon">⌘</div>
+          <h3>Network Platforms</h3>
+          <p>Network simulation, router configuration, switching, and network management.</p>
+          <div class="tag-list">
+            <span>MikroTik</span><span>Cisco</span><span>Packet Tracer</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <span class="skill-number">03</span>
+          <div class="skill-icon">$_</div>
+          <h3>Linux & Systems</h3>
+          <p>Linux command line, services, SSH, web servers, and basic system administration.</p>
+          <div class="tag-list">
+            <span>Debian</span><span>Linux</span><span>SSH</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <span class="skill-number">04</span>
+          <div class="skill-icon">⌁</div>
+          <h3>Monitoring & Analysis</h3>
+          <p>Packet inspection, connectivity testing, service monitoring, and documentation.</p>
+          <div class="tag-list">
+            <span>Wireshark</span><span>SNMP</span><span>Diagnostics</span>
+          </div>
+        </article>
+      </div>
+
+      <p class="honesty-note">
+        Skill categories include learning topics. Individual project pages
+        will document what has been implemented and tested.
+      </p>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="section-heading">
+        <span class="section-label">03 — SELECTED WORK</span>
+        <h2>Labs & <span class="gradient-text">projects.</span></h2>
+        <p class="section-description">
+          Practical work, documented with topology diagrams,
+          configurations, and test results.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-visual visual-network">
+            <span class="visual-label">NETWORK LAB / 001</span>
+            <div class="mini-topology">
+              <span>ROUTER</span><i></i><span>SWITCH</span>
+            </div>
+            <div class="mini-clients">
+              <span>VLAN 10</span><span>VLAN 20</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-category">NETWORKING</span>
+            <h3>Office Network Design</h3>
+            <p>
+              A planned lab for VLAN segmentation, DHCP,
+              inter-VLAN routing, and connectivity verification.
+            </p>
+            <div class="tag-list">
+              <span>Cisco Packet Tracer</span><span>VLAN</span>
+            </div>
+            <span class="project-status">PLANNED PROJECT</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual visual-router">
+            <span class="visual-label">INFRASTRUCTURE / 002</span>
+            <div class="router-graphic">
+              <span>MIKROTIK</span>
+              <div class="router-ports">
+                <i></i><i></i><i></i><i></i><i></i>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-category">NETWORK MANAGEMENT</span>
+            <h3>MikroTik Network Lab</h3>
+            <p>
+              A lab covering RouterOS configuration, NAT,
+              firewall policies, DNS, and network testing.
+            </p>
+            <div class="tag-list">
+              <span>RouterOS</span><span>Firewall</span>
+            </div>
+            <span class="project-status">PLANNED PROJECT</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual visual-linux">
+            <span class="visual-label">SYSTEMS / 003</span>
+            <div class="terminal-window">
+              <div><span>$</span> hostname</div>
+              <div class="terminal-output">debian-server</div>
+              <div><span>$</span> systemctl status ssh</div>
+              <div class="terminal-output">Service verification lab</div>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-category">SYSTEM ADMINISTRATION</span>
+            <h3>Linux Server Monitoring</h3>
+            <p>
+              A planned Debian lab for server services,
+              monitoring, and troubleshooting.
+            </p>
+            <div class="tag-list">
+              <span>Debian</span><span>SNMP</span><span>MRTG</span>
+            </div>
+            <span class="project-status">PLANNED PROJECT</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section workflow-section">
+      <div class="workflow-panel">
+        <div>
+          <span class="section-label">04 — MY WORKFLOW</span>
+          <h2>Understand first.<br><span class="gradient-text">Troubleshoot with evidence.</span></h2>
+        </div>
+
+        <div class="workflow-steps">
+          <div><span>01</span><strong>Design</strong><small>Plan topology and IP addressing.</small></div>
+          <div><span>02</span><strong>Configure</strong><small>Implement network and system settings.</small></div>
+          <div><span>03</span><strong>Validate</strong><small>Test connectivity and expected behavior.</small></div>
+          <div><span>04</span><strong>Document</strong><small>Record evidence, issues, and solutions.</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <span class="section-label">05 — CONTACT</span>
+      <h2>Let's connect.</h2>
+      <p>
+        Interested in networking, IT infrastructure, and opportunities
+        to learn through practical work.
+      </p>
+
+      <div class="contact-actions">
+        <a class="button button-primary"
+           href="https://github.com/YOUR-USERNAME"
+           target="_blank" rel="noopener noreferrer">
+          Visit my GitHub ↗
+        </a>
+        <a class="button button-secondary"
+           href="https://www.linkedin.com/"
+           target="_blank" rel="noopener noreferrer">
+          LinkedIn ↗
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="#home">
+      <span class="brand-icon">R<span>.</span></span>
+      <span>RAIHAN<span class="brand-muted">.DEV</span></span>
+    </a>
+    <p>Built with HTML & CSS · Hosted on GitHub Pages</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+</body>
+</html>
